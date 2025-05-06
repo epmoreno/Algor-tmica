@@ -1,0 +1,152 @@
+\doxysection{maximo\+\_\+minimo\+\_\+\+Dy\+V.\+cpp File Reference}
+\hypertarget{maximo__minimo__DyV_8cpp}{}\label{maximo__minimo__DyV_8cpp}\index{maximo\_minimo\_DyV.cpp@{maximo\_minimo\_DyV.cpp}}
+
+
+Programa para encontrar el máximo y mínimo de un vector utilizando la técnica de Divide y Vencerás.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$omp.\+h$>$}\newline
+Include dependency graph for maximo\+\_\+minimo\+\_\+\+Dy\+V.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{da/d66/maximo__minimo__DyV_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structResultadoMaxMin}{Resultado\+Max\+Min}}
+\begin{DoxyCompactList}\small\item\em Structura para almacenar los índices del máximo y mínimo encontrados en un segmento del vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structResultadoMaxMin}{Resultado\+Max\+Min}} \mbox{\hyperlink{maximo__minimo__DyV_8cpp_a053b167e053770009c26d69cd944cf90}{encontrar\+\_\+maximo\+\_\+minimo\+\_\+segmento}} (int \texorpdfstring{$\ast$}{*}v, int inicio, int fin)
+\begin{DoxyCompactList}\small\item\em Función para encontrar el máximo y mínimo en un segmento del vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{maximo__minimo__DyV_8cpp_a450836a98da2c3f5ab60a0a487d854e2}{encontrar\+\_\+maximo\+\_\+minimo}} (int \texorpdfstring{$\ast$}{*}v, int n, int \&max\+\_\+idx, int \&min\+\_\+idx)
+\begin{DoxyCompactList}\small\item\em Función recursiva para encontrar el máximo y mínimo en un vector utilizando Open\+MP. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{maximo__minimo__DyV_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}{main}} (int argc, char const \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Programa para encontrar el máximo y mínimo de un vector utilizando la técnica de Divide y Vencerás. 
+
+Este programa utiliza Open\+MP para paralelizar la búsqueda del máximo y mínimo en un vector de enteros. La eficiencia teórica en el peor de los casos es O(n log n), y en el mejor de los casos es O(n). El algoritmo divide el vector en dos mitades, encuentra el máximo y mínimo en cada mitad y combina los resultados. Se utiliza la directiva \#pragma omp parallel sections para paralelizar la búsqueda en ambas mitades, y se combinan las soluciones para obtener el resultado final. El programa también incluye una estructura \doxylink{structResultadoMaxMin}{Resultado\+Max\+Min} para almacenar los índices del máximo y mínimo encontrados. \begin{DoxyAuthor}{Author}
+Enrique Pinazo Moreno 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2025-\/04-\/15 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{maximo__minimo__DyV_8cpp_source}{maximo\+\_\+minimo\+\_\+\+Dy\+V.\+cpp}}.
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{maximo__minimo__DyV_8cpp_a450836a98da2c3f5ab60a0a487d854e2}\label{maximo__minimo__DyV_8cpp_a450836a98da2c3f5ab60a0a487d854e2} 
+\index{maximo\_minimo\_DyV.cpp@{maximo\_minimo\_DyV.cpp}!encontrar\_maximo\_minimo@{encontrar\_maximo\_minimo}}
+\index{encontrar\_maximo\_minimo@{encontrar\_maximo\_minimo}!maximo\_minimo\_DyV.cpp@{maximo\_minimo\_DyV.cpp}}
+\doxysubsubsection{\texorpdfstring{encontrar\_maximo\_minimo()}{encontrar\_maximo\_minimo()}}
+{\footnotesize\ttfamily void encontrar\+\_\+maximo\+\_\+minimo (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{v,  }\item[{int}]{n,  }\item[{int \&}]{max\+\_\+idx,  }\item[{int \&}]{min\+\_\+idx }\end{DoxyParamCaption})}
+
+
+
+Función recursiva para encontrar el máximo y mínimo en un vector utilizando Open\+MP. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Vector de enteros. \\
+\hline
+{\em n} & Tamaño del vector. \\
+\hline
+{\em max\+\_\+idx} & Índice del máximo encontrado. \\
+\hline
+{\em min\+\_\+idx} & Índice del mínimo encontrado.\\
+\hline
+\end{DoxyParams}
+Se plantean los casos base para un elemento y dos elementos, para evitar la recursión innecesaria. Caso base para dos elementos
+
+Dividir el vector en dos mitades y buscar el máximo y mínimo en paralelo
+
+Comparar los resultados de ambas mitades
+
+Definition at line \mbox{\hyperlink{maximo__minimo__DyV_8cpp_source_l00067}{67}} of file \mbox{\hyperlink{maximo__minimo__DyV_8cpp_source}{maximo\+\_\+minimo\+\_\+\+Dy\+V.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{maximo__minimo__DyV_8cpp_source_l00035}{encontrar\+\_\+maximo\+\_\+minimo\+\_\+segmento()}}, \mbox{\hyperlink{maximo__minimo__DyV_8cpp_source_l00024}{Resultado\+Max\+Min\+::max\+\_\+idx}}, and \mbox{\hyperlink{maximo__minimo__DyV_8cpp_source_l00025}{Resultado\+Max\+Min\+::min\+\_\+idx}}.
+
+
+
+Referenced by \mbox{\hyperlink{maximo__minimo__DyV_8cpp_source_l00126}{main()}}.
+
+\Hypertarget{maximo__minimo__DyV_8cpp_a053b167e053770009c26d69cd944cf90}\label{maximo__minimo__DyV_8cpp_a053b167e053770009c26d69cd944cf90} 
+\index{maximo\_minimo\_DyV.cpp@{maximo\_minimo\_DyV.cpp}!encontrar\_maximo\_minimo\_segmento@{encontrar\_maximo\_minimo\_segmento}}
+\index{encontrar\_maximo\_minimo\_segmento@{encontrar\_maximo\_minimo\_segmento}!maximo\_minimo\_DyV.cpp@{maximo\_minimo\_DyV.cpp}}
+\doxysubsubsection{\texorpdfstring{encontrar\_maximo\_minimo\_segmento()}{encontrar\_maximo\_minimo\_segmento()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structResultadoMaxMin}{Resultado\+Max\+Min}} encontrar\+\_\+maximo\+\_\+minimo\+\_\+segmento (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{v,  }\item[{int}]{inicio,  }\item[{int}]{fin }\end{DoxyParamCaption})}
+
+
+
+Función para encontrar el máximo y mínimo en un segmento del vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Vector de enteros. \\
+\hline
+{\em inicio} & Índice de inicio del segmento. \\
+\hline
+{\em fin} & Índice de fin del segmento. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Los indices del valor maximo y minimo. 
+\end{DoxyReturn}
+Aquí se busca el máximo en la mitad
+
+Aquí se busca el mínimo en la mitad
+
+Almacenar los índices del máximo y mínimo encontrados
+
+Definition at line \mbox{\hyperlink{maximo__minimo__DyV_8cpp_source_l00035}{35}} of file \mbox{\hyperlink{maximo__minimo__DyV_8cpp_source}{maximo\+\_\+minimo\+\_\+\+Dy\+V.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{maximo__minimo__DyV_8cpp_source_l00024}{Resultado\+Max\+Min\+::max\+\_\+idx}}, and \mbox{\hyperlink{maximo__minimo__DyV_8cpp_source_l00025}{Resultado\+Max\+Min\+::min\+\_\+idx}}.
+
+
+
+Referenced by \mbox{\hyperlink{maximo__minimo__DyV_8cpp_source_l00067}{encontrar\+\_\+maximo\+\_\+minimo()}}.
+
+\Hypertarget{maximo__minimo__DyV_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}\label{maximo__minimo__DyV_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089} 
+\index{maximo\_minimo\_DyV.cpp@{maximo\_minimo\_DyV.cpp}!main@{main}}
+\index{main@{main}!maximo\_minimo\_DyV.cpp@{maximo\_minimo\_DyV.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char const \texorpdfstring{$\ast$}{*}}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Tamaño del vector
+
+Declaración de los elementos del vector/
+
+...
+
+Variables para almacenar los índices del máximo y mínimo
+
+Llamada a la función para encontrar el máximo y mínimo
+
+Mostrar el vector
+
+Mostrar los resultados
+
+Liberar la memoria del vector dinámico
+
+Definition at line \mbox{\hyperlink{maximo__minimo__DyV_8cpp_source_l00126}{126}} of file \mbox{\hyperlink{maximo__minimo__DyV_8cpp_source}{maximo\+\_\+minimo\+\_\+\+Dy\+V.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{maximo__minimo__DyV_8cpp_source_l00067}{encontrar\+\_\+maximo\+\_\+minimo()}}.
+

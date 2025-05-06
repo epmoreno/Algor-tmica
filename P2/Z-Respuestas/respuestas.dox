@@ -1,0 +1,10 @@
+/**
+ * @page # Respuestas sobre las preguntas de la práctica
+ * @section AnalisisTeorico Análisis Teórico
+ * @subsection MaximoMinimo Máximo y Mínimo
+ * - Secuencial: O(n) en el mejor y en el peor de los casos.
+ * - Divide y Vencerás: O(n) en el mejor caso y O(n log n) en el peor de los casos.
+ * @subsection SubVectorSumaMax SubVector Suma Máxima
+ * - Secuencial: O(n²) en el mejor y en el peor de los casos.
+ * - Divide y Vencerás: O(n) en el mejor caso y O(n log n) en el peor de los casos.
+ */

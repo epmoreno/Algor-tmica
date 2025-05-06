@@ -1,0 +1,99 @@
+\doxysection{sub\+\_\+suma\+Maxima\+\_\+\+Dy\+V.\+cpp}
+\hypertarget{sub__sumaMaxima__DyV_8cpp_source}{}\label{sub__sumaMaxima__DyV_8cpp_source}\index{sub\_sumaMaxima\_DyV.cpp@{sub\_sumaMaxima\_DyV.cpp}}
+\mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <climits>}}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00013}00013\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00022}\mbox{\hyperlink{structResultadoSubSumMax}{00022}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structResultadoSubSumMax}{ResultadoSubSumMax}}\ \{}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00023}\mbox{\hyperlink{structResultadoSubSumMax_abefc894d9192b526fadb638a07815434}{00023}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structResultadoSubSumMax_abefc894d9192b526fadb638a07815434}{suma}};}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00024}\mbox{\hyperlink{structResultadoSubSumMax_a05e06d4d5438a9dc672d22b4fb1b970a}{00024}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structResultadoSubSumMax_a05e06d4d5438a9dc672d22b4fb1b970a}{inicio}};}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00025}\mbox{\hyperlink{structResultadoSubSumMax_ab0e1216663fda41321ff72c743415ab3}{00025}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structResultadoSubSumMax_ab0e1216663fda41321ff72c743415ab3}{fin}};}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00026}00026\ \};}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00036}\mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_af0066296f4f1fdca5ba75afd85a9c94d}{00036}}\ \mbox{\hyperlink{structResultadoSubSumMax}{ResultadoSubSumMax}}\ \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_af0066296f4f1fdca5ba75afd85a9c94d}{max\_cruce\_sum}}(\textcolor{keywordtype}{int}\ v[],\ \textcolor{keywordtype}{int}\ inicio,\ \textcolor{keywordtype}{int}\ medio,\ \textcolor{keywordtype}{int}\ fin)\{\ }
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00037}00037\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00039}00039\ \ \ \ \ \textcolor{keywordtype}{int}\ suma\_izq\ =\ INT\_MIN;}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00040}00040\ \ \ \ \ \textcolor{keywordtype}{int}\ suma\_actual\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00041}00041\ \ \ \ \ \textcolor{keywordtype}{int}\ inicio\_izq\ =\ medio;}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00042}00042\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ medio;\ i\ >=\ inicio;\ i-\/-\/)\{}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00043}00043\ \ \ \ \ \ \ \ \ suma\_actual\ +=\ v[i];}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00044}00044\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(suma\_actual\ >\ suma\_izq)\{}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ suma\_izq\ =\ suma\_actual;}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ inicio\_izq\ =\ i;}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00047}00047\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00048}00048\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00051}00051\ \ \ \ \ \textcolor{keywordtype}{int}\ suma\_der\ =\ INT\_MIN;}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00052}00052\ \ \ \ \ suma\_actual\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00053}00053\ \ \ \ \ \textcolor{keywordtype}{int}\ fin\_der\ =\ medio\ +\ 1;}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00054}00054\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ medio+1;\ i\ <=\ fin;\ i++)}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00055}00055\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00056}00056\ \ \ \ \ \ \ \ \ suma\_actual\ +=\ v[i];}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00057}00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(suma\_actual\ >\ suma\_der)\{}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ suma\_der\ =\ suma\_actual;}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ fin\_der\ =\ i;}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00060}00060\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00061}00061\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00063}00063\ \ \ \ \ \textcolor{keywordflow}{return}\ \{suma\_izq\ +\ suma\_der,\ inicio\_izq,\ fin\_der\};}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00064}00064\ \}}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00073}\mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_a10397a8b392840ab89bc9d3a66a13066}{00073}}\ \mbox{\hyperlink{structResultadoSubSumMax}{ResultadoSubSumMax}}\ \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_a10397a8b392840ab89bc9d3a66a13066}{max\_subvector}}(\textcolor{keywordtype}{int}\ v[],\ \textcolor{keywordtype}{int}\ inicio,\ \textcolor{keywordtype}{int}\ fin)\{}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00074}00074\ \ \ \ \ \textcolor{comment}{//\ caso\ base:\ vector\ de\ un\ solo\ elemento}}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00075}00075\ \ \ \ \ \textcolor{keywordflow}{if}(inicio\ ==\ fin)\{}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00076}00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{v[inicio],\ inicio,\ fin\};}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00077}00077\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00079}00079\ \ \ \ \ \textcolor{keywordtype}{int}\ medio\ =\ (inicio\ +\ fin)\ /\ 2;}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00081}00081\ \ \ \ \ \textcolor{comment}{//\ Resolver\ recursivamente\ las\ dos\ mitades}}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00082}00082\ \ \ \ \ \mbox{\hyperlink{structResultadoSubSumMax}{ResultadoSubSumMax}}\ izq\ =\ \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_a10397a8b392840ab89bc9d3a66a13066}{max\_subvector}}(v,\ inicio,\ medio);}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00083}00083\ \ \ \ \ \mbox{\hyperlink{structResultadoSubSumMax}{ResultadoSubSumMax}}\ der\ =\ \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_a10397a8b392840ab89bc9d3a66a13066}{max\_subvector}}(v,\ medio\ +\ 1,\ fin);}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00084}00084\ }
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00085}00085\ \ \ \ \ \textcolor{comment}{//\ Calcular\ la\ suma\ máxima\ que\ cruza\ el\ punto\ medio}}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00086}00086\ \ \ \ \ \mbox{\hyperlink{structResultadoSubSumMax}{ResultadoSubSumMax}}\ cruzando\ =\ \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_af0066296f4f1fdca5ba75afd85a9c94d}{max\_cruce\_sum}}(v,\ inicio,\ medio,\ fin);}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00087}00087\ }
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00088}00088\ \ \ \ \ \textcolor{comment}{//\ Determinar\ qué\ resultado\ es\ mayor}}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00089}00089\ \ \ \ \ \textcolor{keywordflow}{if}(izq.\mbox{\hyperlink{structResultadoSubSumMax_abefc894d9192b526fadb638a07815434}{suma}}\ >=\ der.\mbox{\hyperlink{structResultadoSubSumMax_abefc894d9192b526fadb638a07815434}{suma}}\ \&\&\ izq.\mbox{\hyperlink{structResultadoSubSumMax_abefc894d9192b526fadb638a07815434}{suma}}\ >=\ cruzando.\mbox{\hyperlink{structResultadoSubSumMax_abefc894d9192b526fadb638a07815434}{suma}})\{}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00090}00090\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ izq;}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00091}00091\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(der.\mbox{\hyperlink{structResultadoSubSumMax_abefc894d9192b526fadb638a07815434}{suma}}\ >=\ izq.\mbox{\hyperlink{structResultadoSubSumMax_abefc894d9192b526fadb638a07815434}{suma}}\ \&\&\ der.\mbox{\hyperlink{structResultadoSubSumMax_abefc894d9192b526fadb638a07815434}{suma}}\ >=\ cruzando.\mbox{\hyperlink{structResultadoSubSumMax_abefc894d9192b526fadb638a07815434}{suma}})\{}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00092}00092\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ der;}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00093}00093\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00094}00094\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ cruzando;}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00095}00095\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00096}00096\ \}}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00097}00097\ }
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00098}\mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}{00098}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}{main}}(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *argv[])}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00099}00099\ \{}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00100}00100\ \ \ \ \ \textcolor{keywordtype}{int}\ v[]\ =\ \{-\/2,\ -\/5,\ 6,\ -\/2,\ -\/3,\ 1,\ 5,\ -\/6\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00101}00101\ \ \ \ \ \textcolor{comment}{//int\ v[]\ =\ \{8,\ -\/5,\ 6,\ -\/2,\ -\/3,\ 1,\ -\/6,\ -\/6\};}}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00102}00102\ \ \ \ \ \textcolor{comment}{//int\ v[]\ =\ \{-\/2,\ -\/5,\ -\/2,\ -\/2,\ 6,\ 1,\ 5,\ -\/6\};}}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00103}00103\ \ \ \ \ \textcolor{keywordtype}{int}\ n\ =\ \textcolor{keyword}{sizeof}(v)\ /\ \textcolor{keyword}{sizeof}(v[0]);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00104}00104\ \ \ \ \ \mbox{\hyperlink{structResultadoSubSumMax}{ResultadoSubSumMax}}\ resultado\ =\ \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_a10397a8b392840ab89bc9d3a66a13066}{max\_subvector}}(v,\ 0,\ n\ -\/\ 1);\ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00105}00105\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00106}00106\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Vector\ original:\ ["{}};}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00107}00107\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ n;\ i++)\{}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00108}00108\ \ \ \ \ \ \ \ \ cout\ <<\ v[i];}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00109}00109\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(i\ <\ n\ -\/\ 1)\ cout\ <<\ \textcolor{stringliteral}{"{},\ "{}};}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00110}00110\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00111}00111\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}]"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00112}00112\ }
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00113}00113\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Suma\ máxima:\ "{}}\ <<\ resultado.\mbox{\hyperlink{structResultadoSubSumMax_abefc894d9192b526fadb638a07815434}{suma}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00114}00114\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Índice\ inicio:\ "{}}\ <<\ resultado.\mbox{\hyperlink{structResultadoSubSumMax_a05e06d4d5438a9dc672d22b4fb1b970a}{inicio}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00115}00115\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Índice\ fin:\ "{}}\ <<\ resultado.\mbox{\hyperlink{structResultadoSubSumMax_ab0e1216663fda41321ff72c743415ab3}{fin}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00116}00116\ }
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00117}00117\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Subvector\ máximo:\ ["{}};}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00118}00118\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ resultado.\mbox{\hyperlink{structResultadoSubSumMax_a05e06d4d5438a9dc672d22b4fb1b970a}{inicio}};\ i\ <=\ resultado.\mbox{\hyperlink{structResultadoSubSumMax_ab0e1216663fda41321ff72c743415ab3}{fin}};\ i++)\{}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00119}00119\ \ \ \ \ \ \ \ \ cout\ <<\ v[i];}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00120}00120\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(i\ <\ resultado.\mbox{\hyperlink{structResultadoSubSumMax_ab0e1216663fda41321ff72c743415ab3}{fin}})\ cout\ <<\ \textcolor{stringliteral}{"{},\ "{}};}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00121}00121\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00122}00122\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}]"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00123}00123\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00124}00124\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{sub__sumaMaxima__DyV_8cpp_source_l00125}00125\ \}}
+
+\end{DoxyCode}

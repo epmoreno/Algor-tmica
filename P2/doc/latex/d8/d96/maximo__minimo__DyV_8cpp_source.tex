@@ -1,0 +1,116 @@
+\doxysection{maximo\+\_\+minimo\+\_\+\+Dy\+V.\+cpp}
+\hypertarget{maximo__minimo__DyV_8cpp_source}{}\label{maximo__minimo__DyV_8cpp_source}\index{maximo\_minimo\_DyV.cpp@{maximo\_minimo\_DyV.cpp}}
+\mbox{\hyperlink{maximo__minimo__DyV_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00014}00014\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00015}00015\ \textcolor{preprocessor}{\#include\ <omp.h>}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00016}00016\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00023}\mbox{\hyperlink{structResultadoMaxMin}{00023}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structResultadoMaxMin}{ResultadoMaxMin}}\ \{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00024}\mbox{\hyperlink{structResultadoMaxMin_a60d88e354edd07f4dbbe02a75f08a348}{00024}}\ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structResultadoMaxMin_a60d88e354edd07f4dbbe02a75f08a348}{max\_idx}};}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00025}\mbox{\hyperlink{structResultadoMaxMin_a1e61f690c0d54090767bd7d608a90f4f}{00025}}\ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structResultadoMaxMin_a1e61f690c0d54090767bd7d608a90f4f}{min\_idx}};}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00026}00026\ \};}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00035}\mbox{\hyperlink{maximo__minimo__DyV_8cpp_a053b167e053770009c26d69cd944cf90}{00035}}\ \mbox{\hyperlink{structResultadoMaxMin}{ResultadoMaxMin}}\ \mbox{\hyperlink{maximo__minimo__DyV_8cpp_a053b167e053770009c26d69cd944cf90}{encontrar\_maximo\_minimo\_segmento}}(\textcolor{keywordtype}{int}\ *v,\ \textcolor{keywordtype}{int}\ inicio,\ \textcolor{keywordtype}{int}\ fin)\ \{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00036}00036\ \ \ \ \ \mbox{\hyperlink{structResultadoMaxMin}{ResultadoMaxMin}}\ res;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00037}00037\ \ \ \ \ \textcolor{keywordtype}{int}\ min\ =\ v[0];}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00038}00038\ \ \ \ \ \textcolor{keywordtype}{int}\ max\ =\ v[0];}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00039}00039\ \ \ \ \ \textcolor{keywordtype}{int}\ idx\_max\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00040}00040\ \ \ \ \ \textcolor{keywordtype}{int}\ idx\_min\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00041}00041\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ inicio;\ i\ <\ fin;\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00043}00043\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(v[i]\ >\ max)\ \{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ max\ =\ v[i];}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ idx\_max\ =\ i;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00046}00046\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00048}00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(v[i]\ <\ min)\ \{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ min\ =\ v[i];}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ idx\_min\ =\ i;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00051}00051\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00052}00052\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00054}00054\ \ \ \ \ res.\mbox{\hyperlink{structResultadoMaxMin_a60d88e354edd07f4dbbe02a75f08a348}{max\_idx}}\ =\ idx\_max;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00055}00055\ \ \ \ \ res.\mbox{\hyperlink{structResultadoMaxMin_a1e61f690c0d54090767bd7d608a90f4f}{min\_idx}}\ =\ idx\_min;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00056}00056\ \ \ \ \ \textcolor{keywordflow}{return}\ res;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00057}00057\ \}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00067}\mbox{\hyperlink{maximo__minimo__DyV_8cpp_a450836a98da2c3f5ab60a0a487d854e2}{00067}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{maximo__minimo__DyV_8cpp_a450836a98da2c3f5ab60a0a487d854e2}{encontrar\_maximo\_minimo}}(\textcolor{keywordtype}{int}\ *v,\ \textcolor{keywordtype}{int}\ n,\ \textcolor{keywordtype}{int}\ \&max\_idx,\ \textcolor{keywordtype}{int}\ \&min\_idx)\ \{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00068}00068\ \ \ \ \ \textcolor{keywordflow}{if}(n\ <=\ 1)\ \{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00069}00069\ \ \ \ \ \ \ \ \ max\_idx\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00070}00070\ \ \ \ \ \ \ \ \ min\_idx\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00071}00071\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00072}00072\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00074}00074\ \ \ \ \ \textcolor{keywordflow}{if}(n\ ==\ 2)\ \{\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00075}00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(v[0]\ >\ v[1])\ \{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ max\_idx\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ min\_idx\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00078}00078\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ max\_idx\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ min\_idx\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00081}00081\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00082}00082\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00083}00083\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00084}00084\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00085}00085\ \ \ \ \ \textcolor{keywordtype}{int}\ medio\ =\ n/2;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00086}00086\ \ \ \ \ \textcolor{keywordtype}{int}\ max\_idx\_izq,\ min\_idx\_izq;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00087}00087\ \ \ \ \ \textcolor{keywordtype}{int}\ max\_idx\_der,\ min\_idx\_der;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00088}00088\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00090}00090\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00091}00091\ \textcolor{preprocessor}{\ \ \ \ \#pragma\ omp\ parallel\ sections}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00092}00092\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00093}00093\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#pragma\ omp\ section}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00094}00094\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00095}00095\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structResultadoMaxMin}{ResultadoMaxMin}}\ res\_izq\ =\ \mbox{\hyperlink{maximo__minimo__DyV_8cpp_a053b167e053770009c26d69cd944cf90}{encontrar\_maximo\_minimo\_segmento}}(v,\ 0,\ medio);}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ max\_idx\_izq\ =\ res\_izq.\mbox{\hyperlink{structResultadoMaxMin_a60d88e354edd07f4dbbe02a75f08a348}{max\_idx}};}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00097}00097\ \ \ \ \ \ \ \ \ \ \ \ \ min\_idx\_izq\ =\ res\_izq.\mbox{\hyperlink{structResultadoMaxMin_a1e61f690c0d54090767bd7d608a90f4f}{min\_idx}};}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00098}00098\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00099}00099\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00100}00100\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#pragma\ omp\ section}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00101}00101\ \ \ \ \ \ \ \ \ \{\ \ \ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00102}00102\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structResultadoMaxMin}{ResultadoMaxMin}}\ res\_der\ =\ \mbox{\hyperlink{maximo__minimo__DyV_8cpp_a053b167e053770009c26d69cd944cf90}{encontrar\_maximo\_minimo\_segmento}}(v,\ medio,\ n);}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00103}00103\ \ \ \ \ \ \ \ \ \ \ \ \ max\_idx\_der\ =\ res\_der.\mbox{\hyperlink{structResultadoMaxMin_a60d88e354edd07f4dbbe02a75f08a348}{max\_idx}};}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00104}00104\ \ \ \ \ \ \ \ \ \ \ \ \ min\_idx\_der\ =\ res\_der.\mbox{\hyperlink{structResultadoMaxMin_a1e61f690c0d54090767bd7d608a90f4f}{min\_idx}};}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00105}00105\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00106}00106\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00107}00107\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00108}00108\ \textcolor{preprocessor}{\ \ \ \ \#pragma\ omp\ barrier}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00111}00111\ \textcolor{preprocessor}{\ \ \ \ \#pragma\ omp\ single}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00112}00112\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00113}00113\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(v[max\_idx\_izq]\ >\ v[max\_idx\_der])\ \{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00114}00114\ \ \ \ \ \ \ \ \ \ \ \ \ max\_idx\ =\ max\_idx\_izq;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00115}00115\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00116}00116\ \ \ \ \ \ \ \ \ \ \ \ \ max\_idx\ =\ max\_idx\_der;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00117}00117\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00118}00118\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(v[min\_idx\_izq]\ <\ v[min\_idx\_der])\ \{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00119}00119\ \ \ \ \ \ \ \ \ \ \ \ \ min\_idx\ =\ min\_idx\_izq;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00120}00120\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00121}00121\ \ \ \ \ \ \ \ \ \ \ \ \ min\_idx\ =\ min\_idx\_der;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00122}00122\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00123}00123\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00124}00124\ \}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00125}00125\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00126}\mbox{\hyperlink{maximo__minimo__DyV_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}{00126}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{maximo__minimo__DyV_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}{main}}(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *argv[])\ \{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00127}00127\ \ \ \ \ \textcolor{keywordtype}{int}\ n\ =\ 7;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00128}00128\ \ \ \ \ \textcolor{keywordtype}{int}\ *v\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{int}[n];}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00129}00129\ \ \ \ \ v[0]\ =\ 5;\ \ v[1]\ =\ 904;\ v[2]\ =\ 10;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00130}00130\ \ \ \ \ v[3]\ =\ 100;\ v[4]\ =\ 13;\ v[5]\ =\ 54;\ v[6]\ =\ 905;\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00131}00131\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00132}00132\ \ \ \ \ \textcolor{keywordtype}{int}\ max\_idx,\ min\_idx;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00133}00133\ \ \ \ \ \mbox{\hyperlink{maximo__minimo__DyV_8cpp_a450836a98da2c3f5ab60a0a487d854e2}{encontrar\_maximo\_minimo}}(v,\ n,\ max\_idx,\ min\_idx);\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00134}00134\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00136}00136\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}El\ vector\ es:\ ["{}};}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00137}00137\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ n;\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00138}00138\ \ \ \ \ \ \ \ \ cout\ <<\ v[i];}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00139}00139\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(i\ <\ n-\/1)\ cout\ <<\ \textcolor{stringliteral}{"{},\ "{}};}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00140}00140\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00141}00141\ \ \ \ \ cout\ <<\textcolor{stringliteral}{"{}]"{}}<<\ endl;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00143}00143\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}El\ máximo\ es:\ "{}}\ <<\ v[max\_idx]\ <<\ \textcolor{stringliteral}{"{}\ en\ la\ posición\ "{}}\ <<\ max\_idx\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00144}00144\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}El\ mínimo\ es:\ "{}}\ <<\ v[min\_idx]\ <<\ \textcolor{stringliteral}{"{}\ en\ la\ posición\ "{}}\ <<\ min\_idx\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00145}00145\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00146}00146\ \ \ \ \ \textcolor{keyword}{delete}[]\ v;\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00147}00147\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00148}00148\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__DyV_8cpp_source_l00149}00149\ \}}
+
+\end{DoxyCode}

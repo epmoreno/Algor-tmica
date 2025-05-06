@@ -1,0 +1,68 @@
+\doxysection{maximo\+\_\+minimo\+\_\+\+Scl.\+cpp}
+\hypertarget{maximo__minimo__Scl_8cpp_source}{}\label{maximo__minimo__Scl_8cpp_source}\index{maximo\_minimo\_Scl.cpp@{maximo\_minimo\_Scl.cpp}}
+\mbox{\hyperlink{maximo__minimo__Scl_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00014}00014\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00027}\mbox{\hyperlink{maximo__minimo__Scl_8cpp_aba4d8e7a989d2a99c7635f44307bddfe}{00027}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{maximo__minimo__Scl_8cpp_aba4d8e7a989d2a99c7635f44307bddfe}{encontrar\_maximo\_minimo}}(\textcolor{keywordtype}{int}\ v[],\ \textcolor{keywordtype}{int}\ n,\ \textcolor{keywordtype}{int}\ \&maxIdx,\ \textcolor{keywordtype}{int}\ \&minIdx,\ \textcolor{keywordtype}{int}\ \&maX,\ \textcolor{keywordtype}{int}\ \&miN)\{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00029}00029\ \ \ \ \ \textcolor{keywordflow}{if}(n\ ==\ 1)\{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00030}00030\ \ \ \ \ \ \ \ \ maxIdx\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00031}00031\ \ \ \ \ \ \ \ \ minIdx\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00032}00032\ \ \ \ \ \ \ \ \ maX\ =\ v[0];}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ miN\ =\ v[0];}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00034}00034\ \ \ \ \ \}\textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (n\ ==\ 2)\{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00035}00035\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (v[0]\ >\ v[1])\{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ maxIdx\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ minIdx\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ maX\ =\ v[0];}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ miN\ =\ v[1];}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00040}00040\ \ \ \ \ \ \ \ \ \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ maxIdx\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ minIdx\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ maX\ =\ v[1];}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ miN\ =\ v[0];}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00045}00045\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00046}00046\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00048}00048\ \ \ \ \ \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00050}00050\ \ \ \ \ \ \ \ \ maX\ =\ v[0];}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00051}00051\ \ \ \ \ \ \ \ \ miN\ =\ v[0];}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00052}00052\ \ \ \ \ \ \ \ \ maxIdx\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00053}00053\ \ \ \ \ \ \ \ \ minIdx\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 1;\ i\ <\ n;\ i++)\{\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(v[i]>maX)\{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ maX\ =\ v[i];}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ maxIdx\ =\ i;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(v[i]<miN)\{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ miN\ =\ v[i];}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ minIdx\ =\ i;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00067}00067\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00068}00068\ \};}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00071}\mbox{\hyperlink{maximo__minimo__Scl_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}{00071}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{maximo__minimo__Scl_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}{main}}(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}\ \textcolor{keyword}{const}\ *argv[])}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00072}00072\ \{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00073}00073\ \ \ \ \ \textcolor{keywordtype}{int}\ n\ =\ 7;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00074}00074\ \ \ \ \ \textcolor{keywordtype}{int}\ v[]\ =\ \{5,904,10,100,13,54,905\};\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00075}00075\ \ \ \ \ \textcolor{keywordtype}{int}\ idx\_max,\ idx\_min,\ max,\ min;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00077}00077\ \ \ \ \ \mbox{\hyperlink{maximo__minimo__Scl_8cpp_aba4d8e7a989d2a99c7635f44307bddfe}{encontrar\_maximo\_minimo}}(v,\ n,\ idx\_max,\ idx\_min,\ max,\ min);\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00079}00079\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Vector:\ ["{}};}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00080}00080\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ n;\ i++)\{}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00081}00081\ \ \ \ \ \ \ \ \ cout\ <<\ v[i];}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00082}00082\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(i\ <\ n-\/1)\{cout\ <<\ \textcolor{stringliteral}{"{},\ "{}};\}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00083}00083\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00084}00084\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}]"{}}\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00085}00085\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}El\ maximo\ es:\ ("{}}\ <<\ max\ <<\ \textcolor{stringliteral}{"{})\ en\ la\ posicion:\ ["{}}\ <<\ idx\_max\ <<\textcolor{stringliteral}{"{}]"{}}<<\ endl;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00086}00086\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}El\ minimo\ es:\ ("{}}\ <<\ min\ <<\ \textcolor{stringliteral}{"{})\ en\ la\ posicion:\ ["{}}\ <<\ idx\_min\ <<\textcolor{stringliteral}{"{}]"{}}<<\ endl;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00087}00087\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{maximo__minimo__Scl_8cpp_source_l00088}00088\ \}}
+
+\end{DoxyCode}

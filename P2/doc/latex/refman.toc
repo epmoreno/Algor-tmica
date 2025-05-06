@@ -1,0 +1,50 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Respuestas sobre las preguntas de la práctica}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Análisis Teórico}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Máximo y Mínimo}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Sub\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vector Suma Máxima}{1}{subsection.1.1.2}%
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Resultado\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Max\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Min Struct Reference}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{7}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Member Data Documentation}{7}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}max\_idx}{7}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}min\_idx}{8}{subsubsection.4.1.2.2}%
+\contentsline {section}{\numberline {4.2}Resultado\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sub\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sum\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Max Struct Reference}{8}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{8}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Member Data Documentation}{8}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}fin}{8}{subsubsection.4.2.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2.2}inicio}{9}{subsubsection.4.2.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.3}suma}{9}{subsubsection.4.2.2.3}%
+\contentsline {chapter}{\numberline {5}File Documentation}{11}{chapter.5}%
+\contentsline {section}{\numberline {5.1}maximo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}minimo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dy\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}V.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{11}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{12}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Function Documentation}{12}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}encontrar\_maximo\_minimo()}{12}{subsubsection.5.1.2.1}%
+\contentsline {subsubsection}{\numberline {5.1.2.2}encontrar\_maximo\_minimo\_segmento()}{13}{subsubsection.5.1.2.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.3}main()}{13}{subsubsection.5.1.2.3}%
+\contentsline {section}{\numberline {5.2}maximo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}minimo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dy\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}V.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{14}{section.5.2}%
+\contentsline {section}{\numberline {5.3}maximo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}minimo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scl.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{15}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Detailed Description}{15}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Function Documentation}{16}{subsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.1}encontrar\_maximo\_minimo()}{16}{subsubsection.5.3.2.1}%
+\contentsline {subsubsection}{\numberline {5.3.2.2}main()}{17}{subsubsection.5.3.2.2}%
+\contentsline {section}{\numberline {5.4}maximo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}minimo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scl.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{17}{section.5.4}%
+\contentsline {section}{\numberline {5.5}sub\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}suma\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maxima\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dy\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}V.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{18}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{18}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Function Documentation}{19}{subsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.2.1}main()}{19}{subsubsection.5.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.5.2.2}max\_cruce\_sum()}{19}{subsubsection.5.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.5.2.3}max\_subvector()}{19}{subsubsection.5.5.2.3}%
+\contentsline {section}{\numberline {5.6}sub\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}suma\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maxima\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dy\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}V.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{20}{section.5.6}%
+\contentsline {section}{\numberline {5.7}sub\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}suma\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maxima\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scl.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{21}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Detailed Description}{22}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}Function Documentation}{22}{subsection.5.7.2}%
+\contentsline {subsubsection}{\numberline {5.7.2.1}main()}{22}{subsubsection.5.7.2.1}%
+\contentsline {subsubsection}{\numberline {5.7.2.2}subSumaMaxima()}{22}{subsubsection.5.7.2.2}%
+\contentsline {section}{\numberline {5.8}sub\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}suma\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maxima\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scl.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{23}{section.5.8}%
+\contentsline {section}{\numberline {5.9}respuestas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}dox File Reference}{24}{section.5.9}%
+\contentsline {chapter}{Index}{25}{section*.13}%

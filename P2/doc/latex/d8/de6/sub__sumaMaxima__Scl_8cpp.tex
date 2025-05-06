@@ -1,0 +1,98 @@
+\doxysection{sub\+\_\+suma\+Maxima\+\_\+\+Scl.\+cpp File Reference}
+\hypertarget{sub__sumaMaxima__Scl_8cpp}{}\label{sub__sumaMaxima__Scl_8cpp}\index{sub\_sumaMaxima\_Scl.cpp@{sub\_sumaMaxima\_Scl.cpp}}
+
+
+Algoritmo para encontrar el subvector con la suma máxima de forma secuencial básica.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for sub\+\_\+suma\+Maxima\+\_\+\+Scl.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{de/d4e/sub__sumaMaxima__Scl_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{sub__sumaMaxima__Scl_8cpp_aa6acb0fe2fd07f3527e8e922553acb9e}{sub\+Suma\+Maxima}} (int \texorpdfstring{$\ast$}{*}v, int n, int \texorpdfstring{$\ast$}{*}\&v\+SMax)
+\begin{DoxyCompactList}\small\item\em Función para encontrar el subvector con la suma máxima. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{sub__sumaMaxima__Scl_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}{main}} (int argc, char const \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Algoritmo para encontrar el subvector con la suma máxima de forma secuencial básica. 
+
+Este algoritmo utiliza un enfoque secuencial para encontrar el subvector con la suma máxima en un vector de enteros. La eficiencia teórica en el peor de los casos es O(n\texorpdfstring{$^\wedge$}{\string^}2), y en el mejor de los casos es O(n). \begin{DoxyAuthor}{Author}
+Enrique Pinazo Moreno 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2025-\/04-\/15 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{sub__sumaMaxima__Scl_8cpp_source}{sub\+\_\+suma\+Maxima\+\_\+\+Scl.\+cpp}}.
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{sub__sumaMaxima__Scl_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}\label{sub__sumaMaxima__Scl_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089} 
+\index{sub\_sumaMaxima\_Scl.cpp@{sub\_sumaMaxima\_Scl.cpp}!main@{main}}
+\index{main@{main}!sub\_sumaMaxima\_Scl.cpp@{sub\_sumaMaxima\_Scl.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char const \texorpdfstring{$\ast$}{*}}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Inicialización del vector
+
+Declaración de un vector donde se guardará la suma máxima
+
+LLamada a la función para encontrar la suma máxima
+
+mostrando el vector
+
+mostrando el vector de suma máxima
+
+Liberar la memoria
+
+Definition at line \mbox{\hyperlink{sub__sumaMaxima__Scl_8cpp_source_l00065}{65}} of file \mbox{\hyperlink{sub__sumaMaxima__Scl_8cpp_source}{sub\+\_\+suma\+Maxima\+\_\+\+Scl.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{sub__sumaMaxima__Scl_8cpp_source_l00025}{sub\+Suma\+Maxima()}}.
+
+\Hypertarget{sub__sumaMaxima__Scl_8cpp_aa6acb0fe2fd07f3527e8e922553acb9e}\label{sub__sumaMaxima__Scl_8cpp_aa6acb0fe2fd07f3527e8e922553acb9e} 
+\index{sub\_sumaMaxima\_Scl.cpp@{sub\_sumaMaxima\_Scl.cpp}!subSumaMaxima@{subSumaMaxima}}
+\index{subSumaMaxima@{subSumaMaxima}!sub\_sumaMaxima\_Scl.cpp@{sub\_sumaMaxima\_Scl.cpp}}
+\doxysubsubsection{\texorpdfstring{subSumaMaxima()}{subSumaMaxima()}}
+{\footnotesize\ttfamily void sub\+Suma\+Maxima (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{v,  }\item[{int}]{n,  }\item[{int \texorpdfstring{$\ast$}{*}\&}]{v\+SMax }\end{DoxyParamCaption})}
+
+
+
+Función para encontrar el subvector con la suma máxima. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Vector de enteros \\
+\hline
+{\em n} & Tamaño del vector \\
+\hline
+{\em v\+SMax} & Vector donde se guardará la suma máxima\\
+\hline
+\end{DoxyParams}
+Este algoritmo utiliza un enfoque secuencial para encontrar el subvector con la suma máxima. Se inicializa la suma máxima y se recorre el vector para encontrar la suma máxima. Se utiliza un bucle for para recorrer el vector y encontrar la suma máxima. La eficiencia teórica en el peor de los casos es O(n\texorpdfstring{$^\wedge$}{\string^}2), y en el mejor de los casos es O(n). Se utiliza un bucle for para recorrer el vector y encontrar la suma máxima. Si la suma actual más el nuevo elemento es menor que el nuevo elemento, comenzamos un nuevo subvector desde esta posición
+
+Si la suma actual es mayor que la suma global, actualizamos la suma global y los índices de inicio y fin del subvector
+
+Guardamos el subvector de suma máxima
+
+Resto del vector se llena con ceros
+
+Definition at line \mbox{\hyperlink{sub__sumaMaxima__Scl_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{sub__sumaMaxima__Scl_8cpp_source}{sub\+\_\+suma\+Maxima\+\_\+\+Scl.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{sub__sumaMaxima__Scl_8cpp_source_l00065}{main()}}.
+

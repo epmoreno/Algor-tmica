@@ -1,0 +1,68 @@
+\begin{theindex}
+
+  \item {encontrar\_maximo\_minimo}
+    \subitem {maximo\_minimo\_DyV.cpp}, \hyperpage{12}
+    \subitem {maximo\_minimo\_Scl.cpp}, \hyperpage{16}
+  \item {encontrar\_maximo\_minimo\_segmento}
+    \subitem {maximo\_minimo\_DyV.cpp}, \hyperpage{12}
+
+  \indexspace
+
+  \item {fin}
+    \subitem {ResultadoSubSumMax}, \hyperpage{8}
+
+  \indexspace
+
+  \item {inicio}
+    \subitem {ResultadoSubSumMax}, \hyperpage{8}
+
+  \indexspace
+
+  \item {main}
+    \subitem {maximo\_minimo\_DyV.cpp}, \hyperpage{13}
+    \subitem {maximo\_minimo\_Scl.cpp}, \hyperpage{16}
+    \subitem {sub\_sumaMaxima\_DyV.cpp}, \hyperpage{19}
+    \subitem {sub\_sumaMaxima\_Scl.cpp}, \hyperpage{22}
+  \item {max\_cruce\_sum}
+    \subitem {sub\_sumaMaxima\_DyV.cpp}, \hyperpage{19}
+  \item {max\_idx}
+    \subitem {ResultadoMaxMin}, \hyperpage{7}
+  \item {max\_subvector}
+    \subitem {sub\_sumaMaxima\_DyV.cpp}, \hyperpage{19}
+  \item {maximo\_minimo\_DyV.cpp}, \hyperpage{11}, \hyperpage{14}
+    \subitem {encontrar\_maximo\_minimo}, \hyperpage{12}
+    \subitem {encontrar\_maximo\_minimo\_segmento}, \hyperpage{12}
+    \subitem {main}, \hyperpage{13}
+  \item {maximo\_minimo\_Scl.cpp}, \hyperpage{15}, \hyperpage{17}
+    \subitem {encontrar\_maximo\_minimo}, \hyperpage{16}
+    \subitem {main}, \hyperpage{16}
+  \item {min\_idx}
+    \subitem {ResultadoMaxMin}, \hyperpage{7}
+
+  \indexspace
+
+  \item {Respuestas sobre las preguntas de la práctica}, \hyperpage{1}
+  \item {respuestas.dox}, \hyperpage{24}
+  \item {ResultadoMaxMin}, \hyperpage{7}
+    \subitem {max\_idx}, \hyperpage{7}
+    \subitem {min\_idx}, \hyperpage{7}
+  \item {ResultadoSubSumMax}, \hyperpage{8}
+    \subitem {fin}, \hyperpage{8}
+    \subitem {inicio}, \hyperpage{8}
+    \subitem {suma}, \hyperpage{9}
+
+  \indexspace
+
+  \item {sub\_sumaMaxima\_DyV.cpp}, \hyperpage{18}, \hyperpage{20}
+    \subitem {main}, \hyperpage{19}
+    \subitem {max\_cruce\_sum}, \hyperpage{19}
+    \subitem {max\_subvector}, \hyperpage{19}
+  \item {sub\_sumaMaxima\_Scl.cpp}, \hyperpage{21}, \hyperpage{23}
+    \subitem {main}, \hyperpage{22}
+    \subitem {subSumaMaxima}, \hyperpage{22}
+  \item {subSumaMaxima}
+    \subitem {sub\_sumaMaxima\_Scl.cpp}, \hyperpage{22}
+  \item {suma}
+    \subitem {ResultadoSubSumMax}, \hyperpage{9}
+
+\end{theindex}

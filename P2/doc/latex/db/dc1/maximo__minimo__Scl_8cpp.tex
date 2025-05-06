@@ -1,0 +1,101 @@
+\doxysection{maximo\+\_\+minimo\+\_\+\+Scl.\+cpp File Reference}
+\hypertarget{maximo__minimo__Scl_8cpp}{}\label{maximo__minimo__Scl_8cpp}\index{maximo\_minimo\_Scl.cpp@{maximo\_minimo\_Scl.cpp}}
+
+
+Programa para encontrar el máximo y mínimo de un vector utilizando un algoritmo secuencial.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for maximo\+\_\+minimo\+\_\+\+Scl.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{d9/d1d/maximo__minimo__Scl_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{maximo__minimo__Scl_8cpp_aba4d8e7a989d2a99c7635f44307bddfe}{encontrar\+\_\+maximo\+\_\+minimo}} (int v\mbox{[}$\,$\mbox{]}, int n, int \&max\+Idx, int \&min\+Idx, int \&maX, int \&miN)
+\begin{DoxyCompactList}\small\item\em Función para encontrar el máximo y mínimo en un vector. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{maximo__minimo__Scl_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}{main}} (int argc, char const \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Programa para encontrar el máximo y mínimo de un vector utilizando un algoritmo secuencial. 
+
+Este programa utiliza un algoritmo secuencial para encontrar el máximo y mínimo de un vector de enteros. La eficiencia teórica en el peor de los casos es O(n), y en el mejor de los casos es O(n). El algoritmo recorre el vector una sola vez, comparando cada elemento con el máximo y mínimo encontrados hasta el momento. Se utiliza un bucle for para recorrer el vector y encontrar el máximo y mínimo. El programa también incluye una función para imprimir el vector y los resultados. \begin{DoxyAuthor}{Author}
+Enrique Pinazo Moreno 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2025-\/04-\/15 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{maximo__minimo__Scl_8cpp_source}{maximo\+\_\+minimo\+\_\+\+Scl.\+cpp}}.
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{maximo__minimo__Scl_8cpp_aba4d8e7a989d2a99c7635f44307bddfe}\label{maximo__minimo__Scl_8cpp_aba4d8e7a989d2a99c7635f44307bddfe} 
+\index{maximo\_minimo\_Scl.cpp@{maximo\_minimo\_Scl.cpp}!encontrar\_maximo\_minimo@{encontrar\_maximo\_minimo}}
+\index{encontrar\_maximo\_minimo@{encontrar\_maximo\_minimo}!maximo\_minimo\_Scl.cpp@{maximo\_minimo\_Scl.cpp}}
+\doxysubsubsection{\texorpdfstring{encontrar\_maximo\_minimo()}{encontrar\_maximo\_minimo()}}
+{\footnotesize\ttfamily void encontrar\+\_\+maximo\+\_\+minimo (\begin{DoxyParamCaption}\item[{int}]{v\mbox{[}$\,$\mbox{]},  }\item[{int}]{n,  }\item[{int \&}]{max\+Idx,  }\item[{int \&}]{min\+Idx,  }\item[{int \&}]{maX,  }\item[{int \&}]{miN }\end{DoxyParamCaption})}
+
+
+
+Función para encontrar el máximo y mínimo en un vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Vector de enteros. \\
+\hline
+{\em n} & Tamaño del vector. \\
+\hline
+{\em max\+Idx} & Índice del máximo encontrado. \\
+\hline
+{\em min\+Idx} & Índice del mínimo encontrado. \\
+\hline
+{\em maX} & Valor máximo encontrado. \\
+\hline
+{\em miN} & Valor mínimo encontrado.\\
+\hline
+\end{DoxyParams}
+Se plantean los casos base para un elemento y dos elementos, para evitar la recursión innecesaria. Se utiliza un bucle para recorrer el vector y encontrar el máximo y mínimo. Caso base para un y dos elementos
+
+Caso genearl n mayor a 2
+
+Se inicializa los maximo y minimo e indices respectivos en la primera posicion
+
+Se recorre el vector empezando desde la segunda posicion
+
+Se encuentra el maximo
+
+Se encuentra el minimo
+
+Definition at line \mbox{\hyperlink{maximo__minimo__Scl_8cpp_source_l00027}{27}} of file \mbox{\hyperlink{maximo__minimo__Scl_8cpp_source}{maximo\+\_\+minimo\+\_\+\+Scl.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{maximo__minimo__Scl_8cpp_source_l00071}{main()}}.
+
+\Hypertarget{maximo__minimo__Scl_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}\label{maximo__minimo__Scl_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089} 
+\index{maximo\_minimo\_Scl.cpp@{maximo\_minimo\_Scl.cpp}!main@{main}}
+\index{main@{main}!maximo\_minimo\_Scl.cpp@{maximo\_minimo\_Scl.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char const \texorpdfstring{$\ast$}{*}}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Declaración de los elementos del vector ~\newline
+
+
+Llamada a la función para encontrar el máximo y mínimo
+
+Definition at line \mbox{\hyperlink{maximo__minimo__Scl_8cpp_source_l00071}{71}} of file \mbox{\hyperlink{maximo__minimo__Scl_8cpp_source}{maximo\+\_\+minimo\+\_\+\+Scl.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{maximo__minimo__Scl_8cpp_source_l00027}{encontrar\+\_\+maximo\+\_\+minimo()}}.
+

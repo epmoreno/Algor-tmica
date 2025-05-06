@@ -1,0 +1,135 @@
+\doxysection{sub\+\_\+suma\+Maxima\+\_\+\+Dy\+V.\+cpp File Reference}
+\hypertarget{sub__sumaMaxima__DyV_8cpp}{}\label{sub__sumaMaxima__DyV_8cpp}\index{sub\_sumaMaxima\_DyV.cpp@{sub\_sumaMaxima\_DyV.cpp}}
+
+
+Algoritmo para encontrar el subvector con la suma máxima utilizando el método de Divide y Vencerás.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$climits$>$}\newline
+Include dependency graph for sub\+\_\+suma\+Maxima\+\_\+\+Dy\+V.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{da/d6e/sub__sumaMaxima__DyV_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structResultadoSubSumMax}{Resultado\+Sub\+Sum\+Max}}
+\begin{DoxyCompactList}\small\item\em Estructura para almacenar el resultado de la suma máxima de un subvector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structResultadoSubSumMax}{Resultado\+Sub\+Sum\+Max}} \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_af0066296f4f1fdca5ba75afd85a9c94d}{max\+\_\+cruce\+\_\+sum}} (int v\mbox{[}$\,$\mbox{]}, int inicio, int medio, int fin)
+\begin{DoxyCompactList}\small\item\em Función para calcular la suma máxima cruzando el medio. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structResultadoSubSumMax}{Resultado\+Sub\+Sum\+Max}} \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_a10397a8b392840ab89bc9d3a66a13066}{max\+\_\+subvector}} (int v\mbox{[}$\,$\mbox{]}, int inicio, int fin)
+\begin{DoxyCompactList}\small\item\em Función recursiva para encontrar el subvector con la suma máxima. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}{main}} (int argc, char const \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Algoritmo para encontrar el subvector con la suma máxima utilizando el método de Divide y Vencerás. 
+
+Este algoritmo utiliza la técnica de Divide y Vencerás para encontrar el subvector con la suma máxima en un vector de enteros. Se divide el vector en dos mitades, se calcula la suma máxima en cada mitad y se combina el resultado. La eficiencia teórica en el peor de los casos es O(n log n), y en el mejor de los casos es O(n). \begin{DoxyAuthor}{Author}
+Enrique Pinazo Moreno 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2025-\/04-\/15 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_source}{sub\+\_\+suma\+Maxima\+\_\+\+Dy\+V.\+cpp}}.
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{sub__sumaMaxima__DyV_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}\label{sub__sumaMaxima__DyV_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089} 
+\index{sub\_sumaMaxima\_DyV.cpp@{sub\_sumaMaxima\_DyV.cpp}!main@{main}}
+\index{main@{main}!sub\_sumaMaxima\_DyV.cpp@{sub\_sumaMaxima\_DyV.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char const \texorpdfstring{$\ast$}{*}}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Vector que cruza el punto medio
+
+Calcular el tamaño del vector
+
+Llamada a la función para encontrar el subvector con la suma máxima
+
+Definition at line \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_source_l00098}{98}} of file \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_source}{sub\+\_\+suma\+Maxima\+\_\+\+Dy\+V.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_source_l00025}{Resultado\+Sub\+Sum\+Max\+::fin}}, \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_source_l00024}{Resultado\+Sub\+Sum\+Max\+::inicio}}, \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_source_l00073}{max\+\_\+subvector()}}, and \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_source_l00023}{Resultado\+Sub\+Sum\+Max\+::suma}}.
+
+\Hypertarget{sub__sumaMaxima__DyV_8cpp_af0066296f4f1fdca5ba75afd85a9c94d}\label{sub__sumaMaxima__DyV_8cpp_af0066296f4f1fdca5ba75afd85a9c94d} 
+\index{sub\_sumaMaxima\_DyV.cpp@{sub\_sumaMaxima\_DyV.cpp}!max\_cruce\_sum@{max\_cruce\_sum}}
+\index{max\_cruce\_sum@{max\_cruce\_sum}!sub\_sumaMaxima\_DyV.cpp@{sub\_sumaMaxima\_DyV.cpp}}
+\doxysubsubsection{\texorpdfstring{max\_cruce\_sum()}{max\_cruce\_sum()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structResultadoSubSumMax}{Resultado\+Sub\+Sum\+Max}} max\+\_\+cruce\+\_\+sum (\begin{DoxyParamCaption}\item[{int}]{v\mbox{[}$\,$\mbox{]},  }\item[{int}]{inicio,  }\item[{int}]{medio,  }\item[{int}]{fin }\end{DoxyParamCaption})}
+
+
+
+Función para calcular la suma máxima cruzando el medio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Vector de enteros \\
+\hline
+{\em inicio} & Índice de inicio del subvector \\
+\hline
+{\em medio} & Índice medio del subvector \\
+\hline
+{\em fin} & Índice de fin del subvector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{structResultadoSubSumMax}{Resultado\+Sub\+Sum\+Max} Estructura que contiene la suma máxima y los índices de inicio y fin del subvector 
+\end{DoxyReturn}
+Calcular la suma máxima en la parte izquierda
+
+Calcular la suma máxima en la parte derecha
+
+Definition at line \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_source_l00036}{36}} of file \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_source}{sub\+\_\+suma\+Maxima\+\_\+\+Dy\+V.\+cpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_source_l00073}{max\+\_\+subvector()}}.
+
+\Hypertarget{sub__sumaMaxima__DyV_8cpp_a10397a8b392840ab89bc9d3a66a13066}\label{sub__sumaMaxima__DyV_8cpp_a10397a8b392840ab89bc9d3a66a13066} 
+\index{sub\_sumaMaxima\_DyV.cpp@{sub\_sumaMaxima\_DyV.cpp}!max\_subvector@{max\_subvector}}
+\index{max\_subvector@{max\_subvector}!sub\_sumaMaxima\_DyV.cpp@{sub\_sumaMaxima\_DyV.cpp}}
+\doxysubsubsection{\texorpdfstring{max\_subvector()}{max\_subvector()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structResultadoSubSumMax}{Resultado\+Sub\+Sum\+Max}} max\+\_\+subvector (\begin{DoxyParamCaption}\item[{int}]{v\mbox{[}$\,$\mbox{]},  }\item[{int}]{inicio,  }\item[{int}]{fin }\end{DoxyParamCaption})}
+
+
+
+Función recursiva para encontrar el subvector con la suma máxima. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Vector de enteros \\
+\hline
+{\em inicio} & Índice de inicio del subvector \\
+\hline
+{\em fin} & Índice de fin del subvector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{structResultadoSubSumMax}{Resultado\+Sub\+Sum\+Max} Estructura que contiene la suma máxima y los índices de inicio y fin del subvector 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_source_l00073}{73}} of file \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_source}{sub\+\_\+suma\+Maxima\+\_\+\+Dy\+V.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_source_l00036}{max\+\_\+cruce\+\_\+sum()}}, \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_source_l00073}{max\+\_\+subvector()}}, and \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_source_l00023}{Resultado\+Sub\+Sum\+Max\+::suma}}.
+
+
+
+Referenced by \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_source_l00098}{main()}}, and \mbox{\hyperlink{sub__sumaMaxima__DyV_8cpp_source_l00073}{max\+\_\+subvector()}}.
+
