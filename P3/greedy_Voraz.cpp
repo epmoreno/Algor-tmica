@@ -8,23 +8,23 @@ using namespace std;
 void algoritmoGreddy(const vector<vector<int>>& v, vector<int>& rGreedy, int f, int c)
 {
     int suma = 0;
-    int numeroMenor = v[0][c/2]; // Inicializar numeroMenor con el valor del centro de la primera fila
+    int numeroMenor = v[f/2][0]; // Inicializar numeroMenor con el valor del centro de la primera columna
     // Aplicacion de Heuristica:
     for (int i=0; i < c; i++)
     {
-        numeroMenor = v[0][i/2]; // Reiniciar el numeroMenor para la siguiente columna con el valor del centro de la fila
+        numeroMenor = v[f/2][i]; // Reiniciar el numeroMenor para la siguiente columna con el valor del centro de la columna
         cout << "Primer numero de la columna <" << i << "> : " << numeroMenor << endl;
-        for (int j=1; j < f; j++)
+        for (int j=0; j < f; j++)
         {
-            cout << "   " <<suma<<"+"<<v[j-1][i]<< " -- " << suma<<"+"<<v[j][i] <<endl; // Good 
-            if(numeroMenor+suma >= v[j][i]+suma){
+            cout << "   " <<suma<<"+"<<numeroMenor<< " -- " << suma<<"+"<<v[j][i] <<endl; // Good 
+            if(numeroMenor+suma > v[j][i]+suma){
                 cout << "   → Hay un camino mas Factible: " << v[j][i] << endl;
                 numeroMenor = v[j][i];
             }
         }
         rGreedy.push_back(numeroMenor); // Guardar el valor menor en el vector de resultados
-        cout << "Numero mas Factible: " << numeroMenor << endl;
         suma += numeroMenor; // Sumar el valor menor a la suma total
+        cout << "Numero mas Factible: " << numeroMenor << endl;
         cout << "Suma acumulada: " << suma << endl;
         cout << endl;
     }
