@@ -1,79 +1,3 @@
-// #include <iostream>
-// #include <vector>
-// #include <algorithm> 
-// #include <chrono>    
-
-// using namespace std;
-
-// // Función para calcular el camino de suma mínima usando Programación Dinámica
-// int calcularCosteMinimo(const std::vector<std::vector<int>>& m) {
-//     int f = m.size();
-//     if (f == 0) return 0;
-//     int c = m[0].size();
-//     if (c == 0) return 0;
-
-//     // 1. Estructura de datos: Crear la tabla MIN_COST
-//     std::vector<std::vector<int>> min_cost(f, std::vector<int>(c));
-
-//     // 2. Casos Base
-//     min_cost[0][c/2] = m[0][c/2];
-
-//     // Llenar la primera columna (solo se puede venir de arriba)
-//     for (int i = 1; i < f; ++i) {
-//         min_cost[i][0] = m[i][0] + min_cost[i-1][0];
-//     }
-
-//     // Llenar la primera fila (solo se puede venir de la izquierda)
-//     for (int j = 1; j < c; ++j) {
-//         min_cost[0][j] = m[0][j] + min_cost[0][j-1];
-//     }
-
-//     // 3. Relación de Recurrencia: Llenar el resto de la tabla MIN_COST
-//     // Cada min_cost[i][j] es el costo mínimo para llegar a m[i][j]
-//     for (int i = 1; i < f; ++i) {
-//         for (int j = 1; j < c; ++j) {
-//             min_cost[i][j] = m[i][j] + std::min(min_cost[i-1][j], min_cost[i][j-1]);
-//         }
-//     }
-
-//     // El resultado final es la celda inferior derecha de la tabla MIN_COST
-//     return min_cost[f-1][c-1];
-// }
-
-// int main(int argc, char const *argv[]) {
-//     int f,c;
-//     vector<vector<int>> m;
-
-//     if(argc < 4){
-//         cout<<"Error: No se han introducido suficientes argumentos."<<endl;
-//         cout<<"Uso: "<<argv[0]<<" <f> <c> <elementos...>"<<endl;
-//         return 1;
-//     }
-
-//     f = atoi(argv[1]);
-//     c = atoi(argv[2]);
-//     m.resize(f, vector<int>(c));
-
-//     for(int i = 0; i<f; i++){
-//         for(int j = 0; j<c; j++){
-//             m[i][j] = atoi(argv[3 + i*c + j]);
-//         }
-//     }
-
-//     // Medición del tiempo de ejecución
-//     auto start = std::chrono::high_resolution_clock::now();
-
-//     int costeMinimo = calcularCosteMinimo(m); // Llamada a la función de Programación Dinámica
-
-//     auto end = std::chrono::high_resolution_clock::now();
-//     std::chrono::duration<double> duracion = end - start;
-
-//     std::cout << "El camino de suma mínima óptimo (PD) es: " << costeMinimo << std::endl;
-//     std::cout << "Tiempo de ejecución del algoritmo MIN_COST: " << duracion.count() << " segundos." << std::endl;
-
-//     return 0;
-// }
-
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -153,7 +77,7 @@ int calcularCosteMinimoModificado(const std::vector<std::vector<int>>& m) {
 
 
 int main(int argc, char const* argv[]) {
-    if (argc < 3) {
+    if (argc < 4) {
         cout << "Error: No se han introducido suficientes argumentos." << endl;
         cout << "Uso: " << argv[0] << " <filas> <columnas> [elementos...]" << endl;
         return 1;
@@ -183,7 +107,7 @@ int main(int argc, char const* argv[]) {
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> duracion = end - start;
 
-    std::cout << "El camino de suma mínima óptimo (Modificado) es: " << costeMinimo << std::endl;
+    std::cout << "El camino de suma mínima óptimo es: " << costeMinimo << std::endl;
     std::cout << "Tiempo de ejecución del algoritmo: " << duracion.count() << " segundos." << std::endl;
 
     return 0;

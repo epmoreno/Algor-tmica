@@ -1,0 +1,5 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Algoritmo Greedy (Algoritmo Voraz).}{2}{}%
+\contentsline {subsection}{\numberline {1.1}Diseño del Algoritmo Greedy(Voraz) e Implentación.}{2}{}%
+\contentsline {section}{\numberline {2}Programación Dinámica.}{10}{}%
+\contentsline {subsection}{\numberline {2.1}Diseño del Algoritmo de Programación Dinámica e Implementación.}{10}{}%
